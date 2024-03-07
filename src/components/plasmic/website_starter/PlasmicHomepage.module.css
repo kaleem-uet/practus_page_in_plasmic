@@ -39,6 +39,21 @@
   grid-column-end: -1 !important;
   padding: 56px 32px 128px;
 }
+.h1__nEt0Z {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.h1__iA6L {
+  width: auto;
+  color: #ffffff;
+  font-family: "Inknut Antiqua", serif;
+  text-decoration-line: none;
+  text-align: center;
+  text-transform: capitalize;
+}
 .foreground2 {
   display: flex;
   flex-direction: column;
@@ -83,24 +98,6 @@
   > picture
   > img {
   margin-top: 32px;
-}
-.title {
-  font-size: 60px;
-  font-weight: 800;
-  line-height: 1;
-  color: #18e8dcd9;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: normal;
-  white-space: pre-wrap;
-  user-select: none;
-  text-decoration-line: none;
-}
-.span {
-  text-decoration-line: underline;
-  text-transform: capitalize;
 }
 .text__dzcY {
   font-size: 20px;

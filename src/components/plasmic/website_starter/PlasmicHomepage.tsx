@@ -88,8 +88,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   foreground2?: Flex__<"div">;
-  title?: Flex__<"div">;
-  span?: Flex__<"span">;
   section?: Flex__<"section">;
 };
 
@@ -144,6 +142,31 @@ function PlasmicHomepage__RenderFunc(props: {
           )}
         >
           <div className={classNames(projectcss.all, sty.freeBox__ozsFd)}>
+            <h1
+              className={classNames(
+                projectcss.all,
+                projectcss.h1,
+                projectcss.__wab_text,
+                sty.h1__nEt0Z
+              )}
+            >
+              <React.Fragment>
+                <React.Fragment>{""}</React.Fragment>
+                {
+                  <h1
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h1,
+                      projectcss.__wab_text,
+                      sty.h1__iA6L
+                    )}
+                  >
+                    {"practus site"}
+                  </h1>
+                }
+                <React.Fragment>{""}</React.Fragment>
+              </React.Fragment>
+            </h1>
             <Stack__
               as={"div"}
               data-plasmic-name={"foreground2"}
@@ -156,82 +179,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox___1XlAd)}
               >
-                <div
-                  data-plasmic-name={"title"}
-                  data-plasmic-override={overrides.title}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.title
-                  )}
-                >
-                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ textDecoration: "underline", fontWeight: 700 }}
-                      >
-                        {"practus page for mobile"}
-                      </span>
-                    </React.Fragment>
-                  ) : (
-                    <React.Fragment>
-                      <React.Fragment>{""}</React.Fragment>
-                      {
-                        <h1
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.h1,
-                            projectcss.__wab_text,
-                            sty.h1__ypFcw
-                          )}
-                        >
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#FEFEFE", fontWeight: 800 }}
-                            >
-                              {""}
-                            </span>
-                            <React.Fragment>{""}</React.Fragment>
-                            {
-                              <span
-                                data-plasmic-name={"span"}
-                                data-plasmic-override={overrides.span}
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.span,
-                                  projectcss.__wab_text,
-                                  projectcss.plasmic_default__inline,
-                                  sty.span
-                                )}
-                              >
-                                <React.Fragment>
-                                  <span
-                                    className={
-                                      "plasmic_default__all plasmic_default__span"
-                                    }
-                                    style={{
-                                      textDecoration: "underline",
-                                      fontWeight: 800,
-                                      color: "#FEFEFE"
-                                    }}
-                                  >
-                                    {"This is my practus desing"}
-                                  </span>
-                                </React.Fragment>
-                              </span>
-                            }
-                            <React.Fragment>{""}</React.Fragment>
-                          </React.Fragment>
-                        </h1>
-                      }
-                      <React.Fragment>{""}</React.Fragment>
-                    </React.Fragment>
-                  )}
-                </div>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -808,10 +755,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "foreground2", "title", "span", "section"],
-  foreground2: ["foreground2", "title", "span"],
-  title: ["title", "span"],
-  span: ["span"],
+  root: ["root", "foreground2", "section"],
+  foreground2: ["foreground2"],
   section: ["section"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -820,8 +765,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   foreground2: "div";
-  title: "div";
-  span: "span";
   section: "section";
 };
 
@@ -886,8 +829,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     foreground2: makeNodeComponent("foreground2"),
-    title: makeNodeComponent("title"),
-    span: makeNodeComponent("span"),
     section: makeNodeComponent("section"),
 
     // Metadata about props expected for PlasmicHomepage
